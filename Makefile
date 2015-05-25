@@ -10,15 +10,15 @@ site:
 	git clone https://github.com/serverspec/serverspec.github.io.git site
 
 update: site
-	cd site && git reset --hard head
+	cd site && git reset --hard HEAD
 	cd site && git clean -fdx
 	cd site && git pull origin master
 
 patch: update
-	sed -i '' 's|href="/"|href="index.html"|g' site/_layouts/layout.html
-	sed -i '' 's|href="/|href="|g' site/_layouts/layout.html
-	sed -i '' 's|src="/|src="|g' site/_layouts/layout.html
-	sed -i '' 's|<title>Serverspec - |<title>|g' site/_layouts/layout.html
+	#sed -i '' 's|href="/"|href="index.html"|g' site/_layouts/layout.html
+	#sed -i '' 's|href="/|href="|g' site/_layouts/layout.html
+	#sed -i '' 's|src="/|src="|g' site/_layouts/layout.html
+	#sed -i '' 's|<title>Serverspec - |<title>|g' site/_layouts/layout.html
 
 build: patch
 	cd site && bundle install --deployment --path ../vendor
