@@ -39,7 +39,7 @@ ifneq ($(FONT_CSS),$(FONT_CSS_TARGET))
 	$(error Font CSS has changed)
 endif
 	cp -r fonts site/_site/stylesheets/
-	sed -i '' 's!$(FONT_CSS_URL)!fonts/fonts.css!g' site/_site/stylesheets/stylesheet.css
+	#sed -i '' 's!$(FONT_CSS_URL)!fonts/fonts.css!g' site/_site/stylesheets/stylesheet.css
 
 docset:
 	mkdir -p Serverspec.docset/Contents/Resources/Documents/
