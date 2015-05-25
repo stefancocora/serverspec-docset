@@ -24,6 +24,13 @@ build: patch
 	cd site && bundle install --deployment --path ../vendor
 	cd site && bundle exec jekyll build
 
+build_no_patch:
+	cd site && bundle install --deployment --path ../vendor
+	cd site && bundle exec jekyll build
+
+test:
+	make build_no_patch && make docset && cp -r site/_site/* Serverspec.docset/Contents/Resources/Documents/ && make index && make Serverspec.docset/Info.plist && tar --exclude='.DS_Store' -cvzf Serverspec.tgz Serverspec.docset
+
 FONT_CSS = $(shell grep fonts.googleapis.com site/stylesheets/stylesheet.css)
 FONT_CSS_URL = http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,200italic,300italic,400italic|Karla:400,700,400italic,700italic
 FONT_CSS_TARGET = @import url($(FONT_CSS_URL));

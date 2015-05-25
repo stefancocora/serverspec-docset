@@ -8,6 +8,8 @@ INSERT INTO "searchIndex" (name, type, path) VALUES('cgroup','Resource','resourc
 INSERT INTO "searchIndex" (name, type, path) VALUES('command','Resource','resource_types.html#command');
 INSERT INTO "searchIndex" (name, type, path) VALUES('cron','Resource','resource_types.html#cron');
 INSERT INTO "searchIndex" (name, type, path) VALUES('default_gateway','Resource','resource_types.html#default_gateway');
+INSERT INTO "searchIndex" (name, type, path) VALUES('docker_container','Resource','resource_types.html#docker_container');
+INSERT INTO "searchIndex" (name, type, path) VALUES('docker_image','Resource','resource_types.html#docker_image');
 INSERT INTO "searchIndex" (name, type, path) VALUES('file','Resource','resource_types.html#file');
 INSERT INTO "searchIndex" (name, type, path) VALUES('group','Resource','resource_types.html#group');
 INSERT INTO "searchIndex" (name, type, path) VALUES('host','Resource','resource_types.html#host');
@@ -30,6 +32,8 @@ INSERT INTO "searchIndex" (name, type, path) VALUES('routing_table','Resource','
 INSERT INTO "searchIndex" (name, type, path) VALUES('selinux','Resource','resource_types.html#selinux');
 INSERT INTO "searchIndex" (name, type, path) VALUES('service','Resource','resource_types.html#service');
 INSERT INTO "searchIndex" (name, type, path) VALUES('user','Resource','resource_types.html#user');
+INSERT INTO "searchIndex" (name, type, path) VALUES('x509_certificate','Resource','resource_types.html#x509_certificate');
+INSERT INTO "searchIndex" (name, type, path) VALUES('x509_private_key','Resource','resource_types.html#x509_private_key');
 INSERT INTO "searchIndex" (name, type, path) VALUES('windows_feature','Resource','resource_types.html#windows_feature');
 INSERT INTO "searchIndex" (name, type, path) VALUES('windows_registry_key','Resource','resource_types.html#windows_registry_key');
 INSERT INTO "searchIndex" (name, type, path) VALUES('yumrepo','Resource','resource_types.html#yumrepo');
